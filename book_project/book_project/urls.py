@@ -20,7 +20,7 @@ Including another URLconf
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('book_project.urls')),
-    path('admin/', admin.site.urls),
+    path('', include('book_project.urls')),   #you need to include the application urls (page_app.urls) not book_project.urls
+    path('admin/', admin.site.urls),    # you need to import admin above this section
 ]
 
